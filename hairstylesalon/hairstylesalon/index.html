@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<!-- Website Template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>TEST Website </title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+
+	<div id="header">
+		<div class="section">
+			<div class="logo">
+				<a href="index.html">CPE</a>
+			</div>
+			
+			<ul>
+				<li class="selected">
+					<a href="index.html">home</a>
+				</li>
+				
+				<li>
+					<a href="about.html">about</a>
+				</li>
+				
+				<li>
+					<a href="news.html">news</a>
+				</li>
+				<li>
+					<a href="contact.html">contact</a>
+				</li>
+				<li>
+					<a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+				</li>
+				
+			</ul>
+		</div>
+		<div class="article">
+			<img src="images/great-hairstyle.jpg" alt="">
+			<h1>test...</h1>
+		</div>
+	</div>
+	<div id="body">
+		<ul>
+			<li>
+				<a href="hairstyle.html"><img src="images/hairstyle17.jpg" alt=""></a>
+				<b>01</b>
+				<p>
+				</p>
+			</li>
+			<li>
+				<a href="hairstyle.html"><img src="images/hairstyle18.jpg" alt=""></a>
+				<b>02</b>
+				<p>
+				</p>
+			</li>
+			<li>
+				<a href="hairstyle.html"><img src="images/hairstyle19.jpg" alt=""></a>
+				<b>03</b>
+				<p>
+				</p>
+			</li>
+			<li>
+				<a href="hairstyle.html"><img src="images/hairstyle20.jpg" alt=""></a>
+				<b>04</b>
+				<p>
+				</p>
+			</li>
+		</ul>
+		<div>
+			<div class="featured">
+				<h2>Topic</h2>
+				<img src="images/featured.jpg" alt="">
+				<h3>head</h3>
+				<p>
+				</p>
+				<p>
+				</p>
+				<p>
+				</p>
+			</div>
+			<div class="section">
+				<div class="article">
+					<h2>Topic</h2>
+					<p>
+					</p>
+				</div>
+				<div class="newsletter">
+					<p>
+					xxxxx
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div>
+			<div class="connect">
+				<a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">twitter</a>
+				<a href="http://freewebsitetemplates.com/go/facebook/" id="facebook">facebook</a>
+				<a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus">googleplus</a>
+				<a href="http://pinterest.com/fwtemplates/" id="pinterest">pinterest</a>
+			</div>
+			<p>
+				&copy; copyright 2023 | all rights reserved.
+			</p>
+		</div>
+	</div>
+	<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="http://www.ipclub.ws/wp-content/uploads/2016/01/person-icon.png"  alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <button type="button"  class="signup" onclick="document.getElementById('id02').style.display='block'" style="width:auto;" >SIGN UP</button>
+    </div>
+  </form>
+</div>
+
+<div id="id02" class="modal">
+  
+  <form class="modal-content animate" action="action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+     
+    </div>
+
+    <div class="container">
+      <label><b>First Name</b></label>
+      <input type="text" placeholder=" First Name" name ="Fname" required>
+	  <label><b>Last Name</b></label>
+      <input type="text" placeholder=" Last Name" name ="Lname" required>
+	  <label><b>Telephone No.</b></label>
+      <input type="text" placeholder=" Telephone No." name ="Telno" required>
+	  <label><b> Birthday</b></label>
+      <input type="text" placeholder=" DD/MM/YYYY" name ="Birthday" required>
+	  <label><b>Sex</b></label>
+	  <input type="radio" value="male" checked name="sex"> Male <input type="radio" value="female" name="sex">Female<br>
+	  <label><p><b>Username</b></p></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <label><b>Confirm password</b></label>
+      <input type="password" placeholder=" Enter Password again " name="psw" required>
+        
+      <button type="submit">Submit</button>
+      
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+     
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
